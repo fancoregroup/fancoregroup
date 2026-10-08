@@ -1,0 +1,413 @@
+{
+  "snapshots": [
+    {
+      "cityId": "1702109",
+      "city": "Araguaína",
+      "collectedAt": "2026-09-21T23:30:07-03:00",
+      "radiusMeters": 5000,
+      "count": 4
+    },
+    {
+      "cityId": "1721000",
+      "city": "Palmas",
+      "collectedAt": "2026-09-21T23:41:40-03:00",
+      "radiusMeters": 5000,
+      "count": 20
+    },
+    {
+      "cityId": "2101400",
+      "city": "Balsas",
+      "collectedAt": "2026-09-21T23:30:36-03:00",
+      "radiusMeters": 5000,
+      "count": 8
+    },
+    {
+      "cityId": "2105302",
+      "city": "Imperatriz",
+      "collectedAt": "2026-09-21T23:41:56-03:00",
+      "radiusMeters": 5000,
+      "count": 44
+    },
+    {
+      "cityId": "2604106",
+      "city": "Caruaru",
+      "collectedAt": "2026-09-21T23:42:07-03:00",
+      "radiusMeters": 5000,
+      "count": 48
+    },
+    {
+      "cityId": "3170206",
+      "city": "Uberlândia",
+      "collectedAt": "2026-09-21T23:31:05-03:00",
+      "radiusMeters": 5000,
+      "count": 271
+    },
+    {
+      "cityId": "3501608",
+      "city": "Americana",
+      "collectedAt": "2026-09-21T23:31:12-03:00",
+      "radiusMeters": 5000,
+      "count": 57
+    },
+    {
+      "cityId": "3503208",
+      "city": "Araraquara",
+      "collectedAt": "2026-09-21T23:31:21-03:00",
+      "radiusMeters": 5000,
+      "count": 189
+    },
+    {
+      "cityId": "3504008",
+      "city": "Assis",
+      "collectedAt": "2026-09-21T23:31:35-03:00",
+      "radiusMeters": 5000,
+      "count": 11
+    },
+    {
+      "cityId": "3506003",
+      "city": "Bauru",
+      "collectedAt": "2026-09-21T23:31:40-03:00",
+      "radiusMeters": 5000,
+      "count": 49
+    },
+    {
+      "cityId": "3509502",
+      "city": "Campinas",
+      "collectedAt": "2026-09-21T23:31:47-03:00",
+      "radiusMeters": 5000,
+      "count": 374
+    },
+    {
+      "cityId": "3516200",
+      "city": "Franca",
+      "collectedAt": "2026-09-21T23:42:20-03:00",
+      "radiusMeters": 5000,
+      "count": 82
+    },
+    {
+      "cityId": "3518701",
+      "city": "Guarujá",
+      "collectedAt": "2026-09-21T23:32:09-03:00",
+      "radiusMeters": 5000,
+      "count": 99
+    },
+    {
+      "cityId": "3523909",
+      "city": "Itu",
+      "collectedAt": "2026-09-21T23:32:14-03:00",
+      "radiusMeters": 5000,
+      "count": 26
+    },
+    {
+      "cityId": "3526902",
+      "city": "Limeira",
+      "collectedAt": "2026-09-21T23:32:22-03:00",
+      "radiusMeters": 5000,
+      "count": 38
+    },
+    {
+      "cityId": "3529005",
+      "city": "Marília",
+      "collectedAt": "2026-09-21T23:48:00-03:00",
+      "radiusMeters": 5000,
+      "count": 41
+    },
+    {
+      "cityId": "3538709",
+      "city": "Piracicaba",
+      "collectedAt": "2026-09-21T23:32:53-03:00",
+      "radiusMeters": 5000,
+      "count": 66
+    },
+    {
+      "cityId": "3541406",
+      "city": "Presidente Prudente",
+      "collectedAt": "2026-09-21T23:32:58-03:00",
+      "radiusMeters": 5000,
+      "count": 171
+    },
+    {
+      "cityId": "3548906",
+      "city": "São Carlos",
+      "collectedAt": "2026-09-21T23:43:03-03:00",
+      "radiusMeters": 5000,
+      "count": 161
+    },
+    {
+      "cityId": "3549805",
+      "city": "São José do Rio Preto",
+      "collectedAt": "2026-09-21T23:33:25-03:00",
+      "radiusMeters": 5000,
+      "count": 83
+    },
+    {
+      "cityId": "3549904",
+      "city": "São José dos Campos",
+      "collectedAt": "2026-09-21T23:43:23-03:00",
+      "radiusMeters": 5000,
+      "count": 253
+    },
+    {
+      "cityId": "3552205",
+      "city": "Sorocaba",
+      "collectedAt": "2026-09-21T23:33:57-03:00",
+      "radiusMeters": 5000,
+      "count": 242
+    },
+    {
+      "cityId": "3554102",
+      "city": "Taubaté",
+      "collectedAt": "2026-09-21T23:34:03-03:00",
+      "radiusMeters": 5000,
+      "count": 70
+    },
+    {
+      "cityId": "3556701",
+      "city": "Vinhedo",
+      "collectedAt": "2026-09-21T23:34:09-03:00",
+      "radiusMeters": 5000,
+      "count": 110
+    },
+    {
+      "cityId": "4101507",
+      "city": "Arapongas",
+      "collectedAt": "2026-09-21T23:43:35-03:00",
+      "radiusMeters": 5000,
+      "count": 32
+    },
+    {
+      "cityId": "4103701",
+      "city": "Cambé",
+      "collectedAt": "2026-09-21T23:34:29-03:00",
+      "radiusMeters": 5000,
+      "count": 9
+    },
+    {
+      "cityId": "4104303",
+      "city": "Campo Mourão",
+      "collectedAt": "2026-09-21T23:34:36-03:00",
+      "radiusMeters": 5000,
+      "count": 17
+    },
+    {
+      "cityId": "4104808",
+      "city": "Cascavel",
+      "collectedAt": "2026-09-21T23:34:47-03:00",
+      "radiusMeters": 5000,
+      "count": 75
+    },
+    {
+      "cityId": "4106902",
+      "city": "Curitiba",
+      "collectedAt": "2026-09-21T23:43:46-03:00",
+      "radiusMeters": 5000,
+      "count": 930
+    },
+    {
+      "cityId": "4108304",
+      "city": "Foz do Iguaçu",
+      "collectedAt": "2026-09-21T23:35:10-03:00",
+      "radiusMeters": 5000,
+      "count": 300
+    },
+    {
+      "cityId": "4109401",
+      "city": "Guarapuava",
+      "collectedAt": "2026-09-21T23:35:17-03:00",
+      "radiusMeters": 5000,
+      "count": 26
+    },
+    {
+      "cityId": "4113700",
+      "city": "Londrina",
+      "collectedAt": "2026-09-21T23:35:32-03:00",
+      "radiusMeters": 5000,
+      "count": 107
+    },
+    {
+      "cityId": "4115200",
+      "city": "Maringá",
+      "collectedAt": "2026-09-21T23:35:42-03:00",
+      "radiusMeters": 5000,
+      "count": 90
+    },
+    {
+      "cityId": "4118402",
+      "city": "Paranavaí",
+      "collectedAt": "2026-09-21T23:35:59-03:00",
+      "radiusMeters": 5000,
+      "count": 3
+    },
+    {
+      "cityId": "4118501",
+      "city": "Pato Branco",
+      "collectedAt": "2026-09-21T23:44:08-03:00",
+      "radiusMeters": 5000,
+      "count": 38
+    },
+    {
+      "cityId": "4119905",
+      "city": "Ponta Grossa",
+      "collectedAt": "2026-09-21T23:44:17-03:00",
+      "radiusMeters": 5000,
+      "count": 40
+    },
+    {
+      "cityId": "4125506",
+      "city": "São José dos Pinhais",
+      "collectedAt": "2026-09-21T23:36:32-03:00",
+      "radiusMeters": 5000,
+      "count": 89
+    },
+    {
+      "cityId": "4127700",
+      "city": "Toledo",
+      "collectedAt": "2026-09-21T23:36:37-03:00",
+      "radiusMeters": 5000,
+      "count": 41
+    },
+    {
+      "cityId": "4128104",
+      "city": "Umuarama",
+      "collectedAt": "2026-09-21T23:48:11-03:00",
+      "radiusMeters": 5000,
+      "count": 4
+    },
+    {
+      "cityId": "4202008",
+      "city": "Balneário Camboriú",
+      "collectedAt": "2026-09-21T23:37:09-03:00",
+      "radiusMeters": 5000,
+      "count": 58
+    },
+    {
+      "cityId": "4204202",
+      "city": "Chapecó",
+      "collectedAt": "2026-09-21T23:45:17-03:00",
+      "radiusMeters": 5000,
+      "count": 129
+    },
+    {
+      "cityId": "4209102",
+      "city": "Joinville",
+      "collectedAt": "2026-09-21T23:37:40-03:00",
+      "radiusMeters": 5000,
+      "count": 120
+    },
+    {
+      "cityId": "4211900",
+      "city": "Palhoça",
+      "collectedAt": "2026-09-21T23:37:56-03:00",
+      "radiusMeters": 5000,
+      "count": 58
+    },
+    {
+      "cityId": "4219507",
+      "city": "Xanxerê",
+      "collectedAt": "2026-09-21T23:38:14-03:00",
+      "radiusMeters": 5000,
+      "count": 18
+    },
+    {
+      "cityId": "4305108",
+      "city": "Caxias do Sul",
+      "collectedAt": "2026-09-21T23:38:23-03:00",
+      "radiusMeters": 5000,
+      "count": 236
+    },
+    {
+      "cityId": "4313409",
+      "city": "Novo Hamburgo",
+      "collectedAt": "2026-09-21T23:38:29-03:00",
+      "radiusMeters": 5000,
+      "count": 84
+    },
+    {
+      "cityId": "4314100",
+      "city": "Passo Fundo",
+      "collectedAt": "2026-09-21T23:38:45-03:00",
+      "radiusMeters": 5000,
+      "count": 94
+    },
+    {
+      "cityId": "4314902",
+      "city": "Porto Alegre",
+      "collectedAt": "2026-09-21T23:45:28-03:00",
+      "radiusMeters": 5000,
+      "count": 803
+    },
+    {
+      "cityId": "5002704",
+      "city": "Campo Grande",
+      "collectedAt": "2026-09-21T23:45:41-03:00",
+      "radiusMeters": 5000,
+      "count": 79
+    },
+    {
+      "cityId": "5003702",
+      "city": "Dourados",
+      "collectedAt": "2026-09-21T23:39:18-03:00",
+      "radiusMeters": 5000,
+      "count": 21
+    },
+    {
+      "cityId": "5105259",
+      "city": "Lucas do Rio Verde",
+      "collectedAt": "2026-09-21T23:39:25-03:00",
+      "radiusMeters": 5000,
+      "count": 8
+    },
+    {
+      "cityId": "5107040",
+      "city": "Primavera do Leste",
+      "collectedAt": "2026-09-21T23:39:31-03:00",
+      "radiusMeters": 5000,
+      "count": 11
+    },
+    {
+      "cityId": "5107602",
+      "city": "Rondonópolis",
+      "collectedAt": "2026-09-21T23:39:48-03:00",
+      "radiusMeters": 5000,
+      "count": 19
+    },
+    {
+      "cityId": "5107909",
+      "city": "Sinop",
+      "collectedAt": "2026-09-21T23:39:58-03:00",
+      "radiusMeters": 5000,
+      "count": 26
+    },
+    {
+      "cityId": "5201405",
+      "city": "Aparecida de Goiânia",
+      "collectedAt": "2026-09-21T23:46:04-03:00",
+      "radiusMeters": 5000,
+      "count": 2
+    },
+    {
+      "cityId": "5205109",
+      "city": "Catalão",
+      "collectedAt": "2026-09-21T23:46:13-03:00",
+      "radiusMeters": 5000,
+      "count": 10
+    },
+    {
+      "cityId": "5208004",
+      "city": "Formosa",
+      "collectedAt": "2026-09-21T23:40:35-03:00",
+      "radiusMeters": 5000,
+      "count": 17
+    },
+    {
+      "cityId": "5208707",
+      "city": "Goiânia",
+      "collectedAt": "2026-09-21T23:40:55-03:00",
+      "radiusMeters": 5000,
+      "count": 208
+    }
+  ],
+  "uniquePois": 6319,
+  "errors": [],
+  "license": "https://www.openstreetmap.org/copyright"
+}

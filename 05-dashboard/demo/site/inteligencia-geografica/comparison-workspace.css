@@ -1,0 +1,88 @@
+/* Um lugar para montar a seleção e uma faixa discreta durante a exploração. */
+#compare-composer { margin:0 0 24px; }
+.cw-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:16px; }
+.cw-heading h2 { margin:0 0 5px; font:600 22px Urbanist,sans-serif; }
+.cw-heading p { margin:0; color:var(--muted); font-size:12px; line-height:1.6; }
+.cw-heading>.button { flex-shrink:0; font-size:12px; }
+.cw-slots { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+.cw-slots[data-count="0"] { grid-template-columns:1fr; }
+.cw-slots[data-count="0"] .cw-add-slot { min-height:150px; }
+.cw-slot { min-width:0; display:flex; flex-direction:column; padding:14px 16px 6px; border:1px solid var(--line); background:var(--surface); border-radius:13px; }
+.cw-city { display:flex; flex-direction:column; gap:5px; min-width:0; padding:0; border:0; background:transparent; color:var(--text); text-align:left; }
+.cw-city strong { font:600 17px Urbanist,sans-serif; overflow-wrap:anywhere; }
+.cw-city small { color:var(--muted); font-size:10px; }
+.cw-slot-actions { display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:6px; }
+.cw-slot-actions .text-button { font-size:11px; min-height:36px; padding:4px 0; color:var(--muted); }
+.cw-remove { width:36px; height:36px; padding:0; border:0; border-radius:8px; background:transparent; color:var(--muted); font-size:20px; }
+.cw-remove:hover,.cw-chip button:hover { background:var(--soft); color:var(--text); }
+.cw-add-slot { display:flex; align-items:center; justify-content:center; gap:12px; min-height:112px; padding:14px; border:1px dashed var(--line); border-radius:13px; background:transparent; color:var(--text); text-align:left; font:500 12px Inter,sans-serif; }
+.cw-add-slot:hover { border-color:var(--orange); background:var(--soft); }
+.cw-add-slot>b { display:grid; place-items:center; width:32px; height:32px; border-radius:9px; background:var(--soft); color:var(--orange); font-size:23px; font-weight:400; }
+.cw-add-slot small { display:block; color:var(--muted); margin-top:5px; font-size:10px; }
+#compare-tray { display:flex; align-items:center; gap:12px; min-height:50px; padding:6px 10px 6px 16px; margin:0 0 10px; border:1px solid var(--line); border-radius:12px; background:var(--surface); }
+#compare-tray[hidden] { display:none; }
+#cw-tray-count { flex-shrink:0; font:600 11px Inter,sans-serif; color:var(--muted); }
+#cw-tray-cities { display:flex; flex:1; min-width:0; gap:6px; overflow-x:auto; scrollbar-width:thin; }
+.cw-chip { display:flex; align-items:center; flex-shrink:0; gap:4px; padding-left:10px; border-radius:7px; background:var(--soft); font-size:11px; }
+.cw-chip>span { max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.cw-chip button { border:0; background:transparent; color:var(--muted); border-radius:7px; width:32px; height:36px; padding:0; font-size:18px; }
+#compare-tray>.button { min-height:36px; flex-shrink:0; padding:8px 12px; font-size:11px; }
+#comparison-picker { width:min(560px,calc(100vw - 24px)); max-height:calc(100dvh - 32px); margin:auto; padding:24px; border:1px solid var(--line); border-radius:20px; color:var(--text); background:var(--surface); overflow-y:auto; box-sizing:border-box; }
+#comparison-picker::backdrop { background:#0009; backdrop-filter:blur(5px); }
+#comparison-picker header { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:24px; }
+#comparison-picker h2 { margin:5px 0 0; font:600 25px Urbanist,sans-serif; }
+#cw-picker-close { min-width:40px; min-height:40px; font-size:22px; padding:4px; }
+#comparison-picker label { display:block; color:var(--muted); font-size:12px; margin-bottom:8px; }
+#cw-query { display:block; width:100%; min-height:48px; font-size:15px; padding:12px 14px; box-sizing:border-box; }
+#cw-results-label { min-height:18px; margin:14px 0 6px; font-size:11px; line-height:1.6; color:var(--muted); }
+#cw-results { display:grid; gap:3px; max-height:360px; overflow-y:auto; }
+#cw-results button { display:flex; align-items:center; justify-content:space-between; gap:10px; width:100%; min-height:60px; padding:10px 12px; border:1px solid transparent; border-radius:9px; background:transparent; color:var(--text); text-align:left; }
+#cw-results button[aria-selected="true"] { background:var(--soft); border-color:var(--line); }
+#cw-results button[aria-disabled="true"] { opacity:.55; }
+#cw-results strong { font:500 14px Inter,sans-serif; }
+#cw-results small { display:block; margin-top:5px; color:var(--muted); font-size:10px; }
+#cw-results b { flex-shrink:0; color:var(--orange); font-size:11px; font-weight:500; }
+#comparison-picker footer { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:20px; padding-top:18px; border-top:1px solid var(--line); }
+#cw-picker-count { color:var(--muted); font-size:12px; }
+#cw-picker-done { min-height:44px; font-size:12px; }
+#cw-replace-label { font-size:14px; line-height:1.7; }
+#cw-replacements { display:grid; gap:8px; margin:16px 0; }
+#cw-replacements button { display:flex; justify-content:space-between; gap:12px; text-align:left; min-height:48px; }
+#cw-replacements button span:last-child { color:var(--muted); font-size:11px; }
+.experience .ic-pick,.experience .add-city { width:40px; height:40px; min-width:40px; }
+@media(max-width:900px) {
+ .cw-slots { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ #cw-tray-count { display:none; }
+ .cw-chip>span { max-width:145px; }
+}
+@media(max-width:600px) {
+ #compare-composer { margin-bottom:20px; }
+ .cw-heading { align-items:flex-start; }
+ .cw-heading h2 { font-size:20px; }
+ .cw-heading p { font-size:11px; }
+ .cw-heading>.button { font-size:10px; padding:8px; min-height:38px; }
+ .cw-slots { gap:8px; }
+ .cw-slot { padding:12px 12px 3px; }
+ .cw-city strong { font-size:16px; }
+ .cw-add-slot { gap:8px; padding:10px; min-height:110px; font-size:11px; }
+ .cw-add-slot>b { width:25px; height:25px; flex-shrink:0; }
+ .cw-slot-actions .text-button,.cw-remove { min-height:44px; }
+ .cw-remove { width:44px; }
+ #compare-tray { padding:5px 6px; gap:6px; border-radius:10px; }
+ #compare-tray>.button { padding:8px; min-height:44px; font-size:10px; }
+ #cw-tray-cities { gap:5px; }
+ .cw-chip { padding-left:8px; font-size:10px; }
+ .cw-chip>span { max-width:100px; }
+ .cw-chip button { width:36px; height:44px; }
+ #cw-open span { display:none; }
+ #comparison-picker { padding:18px; }
+ #comparison-picker h2 { font-size:23px; }
+ #comparison-picker .eyebrow { font-size:9px; }
+ #comparison-picker header { margin-bottom:20px; }
+ #cw-results { max-height:40dvh; }
+ #cw-results button { padding:10px 6px; }
+ #cw-results strong { font-size:12px; }
+ #cw-results b { font-size:10px; }
+ #cw-replacements button { padding:10px; font-size:12px; }
+ .experience .ic-pick,.experience .add-city { width:44px; height:44px; min-width:44px; }
+}

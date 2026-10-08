@@ -1,0 +1,10 @@
+{
+  "name": "fancore-dashboard-marketing",
+  "private": true,
+  "description": "Site estático do painel Fancore com funções da API. Dependências usadas apenas pelo ATS (api/ats.js e api/carreiras.js).",
+  "engines": { "node": "24.x" },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "@vercel/blob": "^2.0.0"
+  }
+}

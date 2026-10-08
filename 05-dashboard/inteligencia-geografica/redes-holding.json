@@ -1,0 +1,50 @@
+{
+  "reference": "2026-10-08",
+  "source": "Exemplos fictícios de desenvolvimento; não representam unidades reais.",
+  "brands": [
+    {
+      "id": "estica",
+      "name": "Estica",
+      "symbol": "E",
+      "cities": [
+        {
+          "id": "4113700",
+          "city": "Londrina",
+          "uf": "PR",
+          "country": "BR",
+          "lat": -23.304,
+          "lng": -51.1691,
+          "status": "informada",
+          "sourceRows": [
+            1
+          ],
+          "note": "Unidade fictícia de demonstração",
+          "source": "Exemplos fictícios de desenvolvimento; não representam unidades reais.",
+          "reference": "2026-10-08"
+        }
+      ]
+    },
+    {
+      "id": "folks",
+      "name": "Folks Pub",
+      "symbol": "F",
+      "cities": [
+        {
+          "id": "4113700",
+          "city": "Londrina",
+          "uf": "PR",
+          "country": "BR",
+          "lat": -23.304,
+          "lng": -51.1691,
+          "status": "informada",
+          "sourceRows": [
+            1
+          ],
+          "note": "Unidade fictícia de demonstração",
+          "source": "Exemplos fictícios de desenvolvimento; não representam unidades reais.",
+          "reference": "2026-10-08"
+        }
+      ]
+    }
+  ]
+}

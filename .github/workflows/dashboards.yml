@@ -1,0 +1,29 @@
+name: Dashboards
+on:
+  pull_request:
+    paths:
+      - 'tools/campaign_reports/**'
+      - '05-dashboard/demo/site/**'
+      - '.github/workflows/dashboards.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/campaign_reports/**'
+      - '05-dashboard/demo/site/**'
+      - '.github/workflows/dashboards.yml'
+permissions:
+  contents: read
+jobs:
+  performance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python3 -m unittest discover -s tools/campaign_reports -p 'test_*.py' -v
+      - run: node --test tools/campaign_reports/test_auth.cjs tools/campaign_reports/test_demo.cjs
+      - run: node --check 05-dashboard/demo/site/performance/dashboard.js

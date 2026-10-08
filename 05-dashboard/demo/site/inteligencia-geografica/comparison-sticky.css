@@ -1,0 +1,16 @@
+/* Faixa visual da tabela principal. A semântica e o foco ficam no cabeçalho original. */
+.dc-sticky-header{position:fixed;z-index:850;overflow:hidden;pointer-events:none;user-select:none;isolation:isolate;background:var(--surface);color:var(--text);border-bottom:1px solid var(--line)}
+.dc-sticky-track{display:flex;align-items:stretch}
+.dc-sticky-cell{box-sizing:border-box;flex:0 0 auto;display:flex;align-items:center;min-width:0;background:var(--surface);color:var(--muted);border-right:1px solid var(--line);border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.dc-sticky-cell>span{display:block;width:100%;min-width:0}
+.dc-sticky-city{display:block;color:var(--text);text-align:right;overflow-wrap:anywhere}
+.dc-sticky-small{display:block;font:400 10px/1.6 Inter,sans-serif;color:var(--muted);margin-top:5px}
+.dc-sticky-city>.dc-sticky-small{display:inline;font:500 10px Inter,sans-serif;margin-left:4px}
+.dc-sticky-caption{display:block;font-size:10px;font-weight:400;line-height:1.5;color:var(--muted);margin-top:6px}
+.dc-sticky-label{position:absolute;inset:0 auto auto 0;z-index:1;align-items:flex-end;background:var(--surface)}
+.dc-sticky-reference{background:var(--soft)}
+.dc-sticky-reference .dc-sticky-caption{font-size:9px;margin:0 0 4px}
+.dc-sticky-strong{display:block;font-size:14px;font-weight:600}
+body:has(dialog[open]) .dc-sticky-header{visibility:hidden}
+@media(max-width:640px){.dc-sticky-small{font-size:9px}}
+@media print{.dc-sticky-header{display:none!important}}

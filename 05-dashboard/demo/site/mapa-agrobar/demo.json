@@ -1,0 +1,310 @@
+{
+  "demo": true,
+  "reference": "2026-10-08",
+  "source": "Exemplos fictícios de desenvolvimento; não representam unidades reais.",
+  "sourceRowCount": 2,
+  "states": [
+    {
+      "uf": "RO",
+      "name": "Rondônia",
+      "lat": -10.83,
+      "lng": -63.34
+    },
+    {
+      "uf": "AC",
+      "name": "Acre",
+      "lat": -8.77,
+      "lng": -70.55
+    },
+    {
+      "uf": "AM",
+      "name": "Amazonas",
+      "lat": -3.47,
+      "lng": -65.1
+    },
+    {
+      "uf": "RR",
+      "name": "Roraima",
+      "lat": 1.99,
+      "lng": -61.33
+    },
+    {
+      "uf": "PA",
+      "name": "Pará",
+      "lat": -3.79,
+      "lng": -52.48
+    },
+    {
+      "uf": "AP",
+      "name": "Amapá",
+      "lat": 1.41,
+      "lng": -51.77
+    },
+    {
+      "uf": "TO",
+      "name": "Tocantins",
+      "lat": -9.46,
+      "lng": -48.26
+    },
+    {
+      "uf": "MA",
+      "name": "Maranhão",
+      "lat": -5.42,
+      "lng": -45.44
+    },
+    {
+      "uf": "PI",
+      "name": "Piauí",
+      "lat": -6.6,
+      "lng": -42.28
+    },
+    {
+      "uf": "CE",
+      "name": "Ceará",
+      "lat": -5.2,
+      "lng": -39.53
+    },
+    {
+      "uf": "RN",
+      "name": "Rio Grande do Norte",
+      "lat": -5.81,
+      "lng": -36.59
+    },
+    {
+      "uf": "PB",
+      "name": "Paraíba",
+      "lat": -7.28,
+      "lng": -36.72
+    },
+    {
+      "uf": "PE",
+      "name": "Pernambuco",
+      "lat": -8.38,
+      "lng": -37.86
+    },
+    {
+      "uf": "AL",
+      "name": "Alagoas",
+      "lat": -9.62,
+      "lng": -36.82
+    },
+    {
+      "uf": "SE",
+      "name": "Sergipe",
+      "lat": -10.57,
+      "lng": -37.45
+    },
+    {
+      "uf": "BA",
+      "name": "Bahia",
+      "lat": -13.29,
+      "lng": -41.71
+    },
+    {
+      "uf": "MG",
+      "name": "Minas Gerais",
+      "lat": -18.1,
+      "lng": -44.38
+    },
+    {
+      "uf": "ES",
+      "name": "Espírito Santo",
+      "lat": -19.19,
+      "lng": -40.34
+    },
+    {
+      "uf": "RJ",
+      "name": "Rio de Janeiro",
+      "lat": -22.25,
+      "lng": -42.66
+    },
+    {
+      "uf": "SP",
+      "name": "São Paulo",
+      "lat": -22.19,
+      "lng": -48.79
+    },
+    {
+      "uf": "PR",
+      "name": "Paraná",
+      "lat": -24.89,
+      "lng": -51.55
+    },
+    {
+      "uf": "SC",
+      "name": "Santa Catarina",
+      "lat": -27.45,
+      "lng": -50.95
+    },
+    {
+      "uf": "RS",
+      "name": "Rio Grande do Sul",
+      "lat": -30.17,
+      "lng": -53.5
+    },
+    {
+      "uf": "MS",
+      "name": "Mato Grosso do Sul",
+      "lat": -20.51,
+      "lng": -54.54
+    },
+    {
+      "uf": "MT",
+      "name": "Mato Grosso",
+      "lat": -12.64,
+      "lng": -55.42
+    },
+    {
+      "uf": "GO",
+      "name": "Goiás",
+      "lat": -15.98,
+      "lng": -49.86
+    },
+    {
+      "uf": "DF",
+      "name": "Distrito Federal",
+      "lat": -15.83,
+      "lng": -47.86
+    }
+  ],
+  "cities": [
+    {
+      "id": "4113700",
+      "city": "Londrina",
+      "uf": "PR",
+      "country": "BR",
+      "lat": -23.304,
+      "lng": -51.1691,
+      "status": "operando",
+      "sourceRows": [
+        1
+      ],
+      "note": "Unidade fictícia de demonstração"
+    },
+    {
+      "id": "4106902",
+      "city": "Curitiba",
+      "uf": "PR",
+      "country": "BR",
+      "lat": -25.4195,
+      "lng": -49.2646,
+      "status": "implantacao",
+      "sourceRows": [
+        2
+      ],
+      "note": "Unidade fictícia de demonstração"
+    }
+  ],
+  "holdingNetworks": [
+    {
+      "id": "estica",
+      "name": "Estica",
+      "symbol": "E",
+      "cities": [
+        {
+          "id": "4113700",
+          "city": "Londrina",
+          "uf": "PR",
+          "country": "BR",
+          "lat": -23.304,
+          "lng": -51.1691,
+          "status": "informada",
+          "sourceRows": [
+            1
+          ],
+          "note": "Unidade fictícia de demonstração",
+          "source": "Exemplos fictícios de desenvolvimento; não representam unidades reais.",
+          "reference": "2026-10-08"
+        }
+      ]
+    },
+    {
+      "id": "folks",
+      "name": "Folks Pub",
+      "symbol": "F",
+      "cities": [
+        {
+          "id": "4113700",
+          "city": "Londrina",
+          "uf": "PR",
+          "country": "BR",
+          "lat": -23.304,
+          "lng": -51.1691,
+          "status": "informada",
+          "sourceRows": [
+            1
+          ],
+          "note": "Unidade fictícia de demonstração",
+          "source": "Exemplos fictícios de desenvolvimento; não representam unidades reais.",
+          "reference": "2026-10-08"
+        }
+      ]
+    }
+  ],
+  "performance": {
+    "demo": true,
+    "version": "demo-v1",
+    "periodStart": "2026-09-01",
+    "periodEnd": "2026-09-30",
+    "metric": "sales_displayed_brl",
+    "metricLabel": "Valor fictício",
+    "unit": "BRL",
+    "source": "Demonstração fictícia",
+    "sourceTotalsCents": {
+      "agrobar": 1000000,
+      "folks": 600000,
+      "jimmys": 0
+    },
+    "notes": [
+      "Valores fictícios."
+    ],
+    "rows": [
+      [
+        1,
+        "Unidade fictícia A",
+        "agrobar",
+        "4113700",
+        1000000
+      ],
+      [
+        2,
+        "Unidade fictícia F",
+        "folks",
+        "4106902",
+        600000
+      ]
+    ],
+    "cityMatchNotes": []
+  },
+  "leadGeography": {
+    "demo": true,
+    "version": "demo-v1",
+    "crm": "CRM fictício",
+    "extractedAt": "2026-10-08T09:00:00-03:00",
+    "periodStart": "2026-09-01",
+    "periodEnd": "2026-09-30",
+    "definition": "Registros fictícios para demonstrar a camada geográfica.",
+    "totals": {
+      "agrobar": 10,
+      "estica": 5
+    },
+    "unmapped": {
+      "agrobar": 0,
+      "estica": 0
+    },
+    "rows": [
+      {
+        "brand": "agrobar",
+        "cityId": "4113700",
+        "uf": "PR",
+        "count": 10
+      },
+      {
+        "brand": "estica",
+        "cityId": "4106902",
+        "uf": "PR",
+        "count": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#111516">
+  <title>Fancore · Máquina de receita</title>
+  <meta name="description" content="Painel demonstrativo de aquisição de franqueados por marca. Dados fictícios.">
+  <link rel="icon" href="assets/simbolo-fancore.png">
+  <link rel="stylesheet" href="assets/urbanist.css"><link rel="stylesheet" href="assets/inter.css">
+  <link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="app.css?v=6"><link rel="stylesheet" href="visual-v2.css?v=6"><link rel="stylesheet" href="screens-v3.css?v=6">
+  <link rel="stylesheet" href="revenue-v4.css?v=6">
+  <link rel="stylesheet" href="theme-dark.css?v=6" id="dark-theme">
+  <link rel="stylesheet" href="theme-toggle.css?v=6">
+  <link rel="stylesheet" href="workspace-v5.css?v=6">
+  <script src="theme.js?v=6"></script>
+  <script src="revenue-engine.js?v=6" defer></script><script src="revenue-ui.js?v=6" defer></script><script src="app.js?v=6" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <aside class="sidebar" id="sidebar">
+    <a href="#growth-marcas" class="brand-home" aria-label="Fancore, máquina de receita"><img src="assets/logo-fancore.png" alt="Fancore"><span>Máquina de receita</span></a>
+    <div class="nav-label">Máquina de receita</div><nav id="navigation" aria-label="Navegação principal"></nav>
+    <div class="sidebar-bottom"><div class="demo-dot"></div><strong>Ambiente de demonstração</strong><p>Dados fictícios para visualizar<br>o próximo capítulo da Fancore.</p><button class="text-button" id="about-btn">Sobre os dados <span>↗</span></button><div class="user-line"><span class="avatar small">LM</span><div>Lucas Marcato<small>Direção de marketing</small></div></div></div>
+  </aside>
+  <div class="mobile-shade" id="mobile-shade"></div>
+  <div class="workspace">
+    <header class="topbar"><button id="menu-btn" class="icon-button mobile-only" aria-label="Abrir menu" aria-expanded="false"></button><a class="workspace-brand" href="#growth-marcas" aria-label="Fancore, página inicial"><img src="assets/logo-fancore.png" alt="Fancore"></a><div class="breadcrumb"><strong id="breadcrumb">Máquina de receita</strong></div><div class="top-actions"><span class="demo-badge"><i></i> Dados fictícios</span><button type="button" class="icon-button theme-toggle" data-theme-toggle aria-label="Ativar tema laranja" title="Ativar tema laranja">Tema</button><button id="tv-btn" class="fc-botao fc-botao-primario"></button></div></header>
+    <main id="main" tabindex="-1"><div class="page-heading"><div><div class="eyebrow" id="eyebrow">Visão consolidada</div><h1 id="title">A máquina de crescimento.</h1><p id="subtitle">Da atenção à próxima unidade vendida.</p></div><div class="filterbar"><label><span>Marca</span><select id="brand-filter" aria-label="Filtrar por marca"><option value="all">Todas as marcas</option></select></label><label><span>Período</span><select id="period-filter" aria-label="Filtrar por período"><option value="7">Últimos 7 dias</option><option value="30" selected>Últimos 30 dias</option><option value="90">Últimos 90 dias</option></select></label><button id="export-btn" class="icon-button" title="Exportar resumo CSV" aria-label="Exportar resumo CSV"></button></div></div>
+      <div class="context-line"><span id="range-label"></span><span id="reference-label"></span></div>
+      <div id="content"><div class="loading-state">Preparando a demonstração…</div></div>
+      <footer class="page-footer"><span>Fancore · Visão para criar. Método para operar.</span><span>Demonstração · Nenhuma integração real ativa</span></footer>
+    </main>
+  </div>
+  <section id="tv-screen" hidden aria-label="Apresentação para TV"><header class="tv-header"><img src="assets/logo-fancore.png" alt="Fancore"><span class="demo-badge"><i></i> Dados fictícios</span><span class="tv-clock" id="tv-clock"></span><button type="button" class="icon-button theme-toggle" data-theme-toggle aria-label="Ativar tema laranja" title="Ativar tema laranja">Tema</button><button id="tv-exit" class="icon-button" aria-label="Sair do modo TV"></button></header><div id="tv-northstar"></div><div id="tv-content"></div><div class="tv-controls"><button id="tv-prev" class="icon-button" aria-label="Painel anterior">←</button><button id="tv-pause" class="text-button">Pausar</button><button id="tv-next" class="icon-button" aria-label="Próximo painel">→</button><span id="tv-slide-label"></span><label>Trocar a cada <select id="tv-interval" aria-label="Intervalo de troca"><option value="15">15 s</option><option value="30" selected>30 s</option><option value="45">45 s</option></select></label><button id="fullscreen-btn" class="text-button">Tela cheia</button><a href="?tv=1" id="tv-link" class="text-button">Link da TV ↗</a></div><div class="tv-timer"><div id="tv-progress"></div></div></section>
+  <dialog id="detail-dialog"><div class="dialog-head"><span class="demo-badge">Exemplo fictício</span><button id="close-dialog" class="icon-button" aria-label="Fechar detalhes">×</button></div><div id="dialog-body"></div></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+<div role="status" style="position:fixed;bottom:0;left:0;right:0;z-index:100000;background:#ffdc80;color:#171717;padding:7px 12px;text-align:center;font:12px system-ui">DEMONSTRAÇÃO: campanhas, CRM e unidades fictícios. Indicadores municipais mantêm suas fontes públicas.</div>
+</body></html>

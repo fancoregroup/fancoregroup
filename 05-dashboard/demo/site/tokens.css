@@ -1,0 +1,107 @@
+/* Fancore · tokens e classes base (v1, 03/09/2026)
+   Levantados do site fancoregroup.com.br (Framer). Ver design-system-fancore.md.
+   Fontes: Urbane (comercial, Device Fonts) para display e rótulos; Inter para corpo.
+   Declare os @font-face da Urbane no projeto que usar este arquivo, ou deixe o fallback Urbanist (Google Fonts). */
+
+:root {
+  /* cor */
+  --fc-laranja: #ed6c05;
+  --fc-preto: #111516;
+  --fc-grafite: #202526;
+  --fc-creme: #f4f1ee;
+  --fc-branco: #ffffff;
+  --fc-cinza-texto: #545454;
+  --fc-cinza-claro: #cccccc;
+  --fc-cinza-medio: #8f8f8f;
+  --fc-cinza-hero: #b5b5b5;
+  --fc-creme-50: rgba(244, 241, 238, 0.5);
+  --fc-creme-30: rgba(244, 241, 238, 0.3);
+  --fc-veu: rgba(17, 21, 22, 0.8);
+  --fc-card-gradiente: linear-gradient(153deg, #111516 12%, rgba(84, 84, 84, 0.25) 166%);
+
+  /* tipografia */
+  --fc-fonte-display: "Urbane Light", "Urbanist", "Inter", sans-serif;
+  --fc-fonte-rotulo: "Urbane Medium", "Urbanist", "Inter", sans-serif;
+  --fc-fonte-corpo: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --fc-display: 55px;
+  --fc-titulo: 40px;
+  --fc-subtitulo: 24px;
+  --fc-rotulo-g: 18px;
+  --fc-rotulo: 14px;
+  --fc-rotulo-p: 12px;
+  --fc-corpo: 16px;
+  --fc-corpo-p: 14px;
+  --fc-legenda: 13px;
+
+  /* espaço e forma */
+  --fc-largura: 1200px;
+  --fc-gap: 24px;
+  --fc-gap-card: 32px;
+  --fc-secao: 96px;
+  --fc-raio-botao: 2px;
+  --fc-raio-superficie: 8px;
+  --fc-raio-tile: 10px;
+  --fc-raio-card: 16px;
+  --fc-raio-pilula: 40px;
+}
+
+@media (max-width: 1199px) {
+  :root { --fc-display: 42px; --fc-titulo: 38px; --fc-subtitulo: 22px; --fc-secao: 72px; }
+}
+@media (max-width: 809px) {
+  :root { --fc-display: 38px; --fc-titulo: 32px; --fc-subtitulo: 20px; --fc-corpo: 14px; --fc-secao: 56px; }
+}
+
+/* chão */
+.fc-escuro { background: var(--fc-preto); color: var(--fc-creme); }
+.fc-claro { background: var(--fc-creme); color: var(--fc-preto); }
+.fc-container { max-width: var(--fc-largura); margin: 0 auto; padding: var(--fc-secao) 24px; }
+
+/* tipografia */
+.fc-display { font-family: var(--fc-fonte-display); font-weight: 300; font-size: var(--fc-display); line-height: 1.1; letter-spacing: -0.04em; text-wrap: balance; margin: 0; }
+.fc-titulo { font-family: var(--fc-fonte-display); font-weight: 300; font-size: var(--fc-titulo); line-height: 1.1; margin: 0; text-wrap: balance; }
+.fc-subtitulo { font-family: var(--fc-fonte-display); font-weight: 300; font-size: var(--fc-subtitulo); line-height: 1.2; margin: 0; }
+.fc-rotulo { font-family: var(--fc-fonte-rotulo); font-weight: 500; font-size: var(--fc-rotulo); line-height: 1.1; }
+.fc-eyebrow { font-family: var(--fc-fonte-rotulo); font-weight: 500; font-size: var(--fc-rotulo-p); line-height: 1.3; }
+.fc-escuro .fc-eyebrow { color: var(--fc-cinza-claro); }
+.fc-claro .fc-eyebrow { color: var(--fc-preto); }
+.fc-corpo { font-family: var(--fc-fonte-corpo); font-weight: 300; font-size: var(--fc-corpo); line-height: 1.4; letter-spacing: -0.02em; margin: 0; }
+.fc-escuro .fc-corpo { color: var(--fc-cinza-claro); }
+.fc-claro .fc-corpo { color: var(--fc-cinza-texto); }
+.fc-corpo-p { font-family: var(--fc-fonte-corpo); font-weight: 300; font-size: var(--fc-corpo-p); line-height: 1.6; letter-spacing: -0.02em; margin: 0; }
+.fc-legenda { font-family: var(--fc-fonte-corpo); font-weight: 300; font-size: var(--fc-legenda); line-height: 1.2; letter-spacing: -0.02em; }
+.fc-num { font-variant-numeric: tabular-nums; }
+
+/* botões */
+.fc-botao { display: inline-flex; align-items: center; gap: 8px; font-family: var(--fc-fonte-rotulo); font-weight: 500; font-size: var(--fc-rotulo); line-height: 1.1; padding: 12px 20px; border-radius: var(--fc-raio-botao); border: 1px solid transparent; cursor: pointer; text-decoration: none; }
+.fc-botao-primario { background: var(--fc-laranja); color: var(--fc-preto); }
+.fc-botao-primario:hover { background: #ff7a12; }
+.fc-botao-secundario { background: transparent; color: var(--fc-creme); border-color: var(--fc-creme-50); }
+.fc-claro .fc-botao-secundario { color: var(--fc-preto); border-color: var(--fc-preto); }
+.fc-link { font-family: var(--fc-fonte-rotulo); font-weight: 500; font-size: var(--fc-rotulo); color: inherit; text-decoration: none; }
+.fc-link::after { content: " \2192"; }
+.fc-botao:focus-visible, .fc-link:focus-visible { outline: 2px solid var(--fc-laranja); outline-offset: 2px; }
+
+/* card de método */
+.fc-card { background: var(--fc-card-gradiente); border-top: 1px solid var(--fc-laranja); border-radius: var(--fc-raio-card); padding: 24px; display: flex; flex-direction: column; gap: var(--fc-gap-card); color: var(--fc-creme); }
+.fc-tile { width: 54px; height: 54px; border-radius: var(--fc-raio-tile); background: var(--fc-laranja); display: grid; place-items: center; color: var(--fc-preto); }
+
+/* superfície e pílula */
+.fc-superficie { background: var(--fc-grafite); border-radius: var(--fc-raio-superficie); }
+.fc-pilula { width: 32px; height: 32px; border-radius: var(--fc-raio-pilula); background: rgba(0, 0, 0, 0.3); border: 0; color: var(--fc-creme); display: grid; place-items: center; }
+
+/* número grande */
+.fc-numero { font-family: var(--fc-fonte-display); font-weight: 300; font-size: var(--fc-display); line-height: 1; color: var(--fc-branco); font-variant-numeric: tabular-nums; }
+.fc-numero-legenda { font-family: var(--fc-fonte-corpo); font-weight: 300; font-size: var(--fc-corpo-p); color: var(--fc-cinza-claro); line-height: 1.3; }
+
+/* formulário */
+.fc-campo { display: flex; flex-direction: column; gap: 8px; }
+.fc-campo label { font-family: var(--fc-fonte-rotulo); font-weight: 500; font-size: var(--fc-rotulo); color: var(--fc-cinza-claro); }
+.fc-campo input, .fc-campo select { background: var(--fc-grafite); color: var(--fc-creme); border: 1px solid rgba(244, 241, 238, 0.15); border-radius: var(--fc-raio-superficie); padding: 12px 14px; font-family: var(--fc-fonte-corpo); font-size: var(--fc-corpo-p); }
+.fc-campo input:focus, .fc-campo select:focus { outline: 2px solid var(--fc-laranja); outline-offset: 1px; }
+
+/* grafismo */
+.fc-grade { background-image: repeating-linear-gradient(135deg, rgba(17, 21, 22, 0.06) 0 1px, transparent 1px 48px), repeating-linear-gradient(45deg, rgba(17, 21, 22, 0.06) 0 1px, transparent 1px 48px); }
+.fc-blob { position: absolute; width: 480px; height: 480px; border-radius: 223px; background: var(--fc-preto); filter: blur(40px); opacity: 0.6; pointer-events: none; }
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }

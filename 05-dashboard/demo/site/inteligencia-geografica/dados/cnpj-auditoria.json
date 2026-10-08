@@ -1,0 +1,65 @@
+{
+  "uniqueSelected": 1924468,
+  "crossPartDuplicates": 0,
+  "withinPartDuplicates": 0,
+  "rows": 73366147,
+  "activeRows": 28263121,
+  "mapped": 1924394,
+  "unmapped": 74,
+  "foreign": 74,
+  "coveredCities": 5571,
+  "totalCities": 5571,
+  "missingCities": [],
+  "unmatched": [
+    {
+      "uf": "EX",
+      "code": "9707",
+      "name": "EXTERIOR",
+      "count": 74
+    }
+  ],
+  "crosswalk": {
+    "url": "https://www.gov.br/receitafederal/dados/municipios.csv",
+    "sha256": "60da8e582c1021c4be21cc9b45c4bf791f98f75a40df242b4b2ff4a4121da89b"
+  },
+  "totals": {
+    "totalPrimary": 1167784,
+    "totalAny": 1924394,
+    "barsPrimary": 199276,
+    "barsAny": 506899,
+    "primary": [
+      400900,
+      474151,
+      119147,
+      80129,
+      0,
+      1742,
+      29411,
+      1491,
+      919,
+      26251,
+      1693,
+      182,
+      823,
+      2900,
+      28045
+    ],
+    "any": [
+      733443,
+      1128346,
+      350229,
+      213095,
+      0,
+      7362,
+      118165,
+      12070,
+      22063,
+      33862,
+      4276,
+      645,
+      18940,
+      13333,
+      127839
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {Workbook,SpreadsheetFile} from '@oai/artifact-tool';
+const root=path.dirname(fileURLToPath(import.meta.url)),publicDir=path.resolve(root,'../../demo/site/inteligencia-geografica/dados');
+const data=JSON.parse(await fs.readFile(path.join(publicDir,'cnpj.json'),'utf8'));
+const cities=JSON.parse(await fs.readFile(path.join(publicDir,'municipios.json'),'utf8')).cities.sort((a,b)=>a.uf.localeCompare(b.uf)||a.name.localeCompare(b.name,'pt-BR'));
+const index=new Map(data.cities.map(c=>[c.id,c])),wb=Workbook.create();
+const source=data.source+' ; População: https://sidra.ibge.gov.br/tabela/6579';
+for(const [name,mode] of [['Principal','primary'],['Principal ou secundaria','any']]){
+ const s=wb.worksheets.add(name);s.showGridLines=false;
+ s.getRange('A1').values=[['Fancore Geo: alimentação e lazer']];s.getRange('A2').values=[[mode==='primary'?'Setembro/2026. CNPJs ativos por atividade principal.':'Setembro/2026. Principal ou secundária: categorias se sobrepõem. Não somar.']];
+ const head=['Código IBGE','Município','UF','População 2026','Total único','Bares: total único','Bares por 10 mil habitantes',...data.taxonomy.map(c=>c.label),'Fontes'];
+ const rows=cities.map(c=>{const r=index.get(c.id);return [c.id,c.name,c.uf,c.metrics.population?.value??null,r[mode==='primary'?'totalPrimary':'totalAny'],r[mode==='primary'?'barsPrimary':'barsAny'],null,...(r[mode]||Array(15).fill(null)),source];});
+ const end=rows.length+4;s.getRange(`A4:W${end}`).values=[head,...rows];
+ s.getRange(`A1:W${end}`).format.font={name:'Arial',size:10,color:'#111516'};
+ s.getRange('A1').format.font={name:'Arial',size:17,bold:true,color:'#111516'};s.getRange('A1').format.rowHeight=28;s.getRange('A2').format.rowHeight=24;
+ s.getRange(`A4:W${end}`).format.columnWidth=19;s.getRange(`A4:W4`).format={fill:'#111516',font:{name:'Arial',size:10,bold:true,color:'#ffffff'},rowHeight:60,wrapText:true,verticalAlignment:'center'};
+ s.getRange(`A5:W${end}`).format.rowHeight=21;s.getRange(`A5:A${end}`).setNumberFormat('@');s.getRange(`D5:V${end}`).setNumberFormat('#,##0');s.getRange(`G5:G${end}`).setNumberFormat('#,##0.0');
+ s.getRange(`B4:B${end}`).format.columnWidth=30;s.getRange(`C4:C${end}`).format.columnWidth=7;s.getRange(`W4:W${end}`).format.columnWidth=65;
+ s.getRange('G5').formulas=[['=IF(AND(ISNUMBER(D5),D5>0,ISNUMBER(F5)),F5/D5*10000,"")']];s.getRange(`G5:G${end}`).fillDown();
+ s.freezePanes.freezeRows(4);s.freezePanes.freezeColumns(3);const table=s.tables.add(`A4:W${end}`,true,mode==='primary'?'CnpjPrincipal':'CnpjQualquerAtividade');table.style='TableStyleLight1';table.showBandedRows=false;
+ const image=await wb.render({sheetName:name,range:'A1:H11',scale:1,format:'png'});await fs.writeFile(path.join(root,'../qa/cnpj-planilha-'+mode+'.png'),new Uint8Array(await image.arrayBuffer()));
+}
+const s=wb.worksheets.add('Fontes e metodo');s.showGridLines=false;
+const rows=[['Fancore Geo: fontes e método',''],['Base','Receita Federal, setembro/2026. Arquivos gerados em 13/09/2026.'],['Unidade','CNPJ completo e único, incluindo filiais, situação cadastral 02 (ativa).'],['Limite','Cadastro ativo não comprova funcionamento, ponto aberto ao público ou concorrência direta.'],['Total único','União das 15 categorias. No modo principal ou secundária não somar categorias.'],['Grupo Bares','União dos códigos 5611202, 5611204 e 5611205, sem duplicar CNPJ.'],['Pub','Conceito comercial, não há separação exclusiva por CNAE nesta seleção.'],['Fora do recorte','Delivery, ambulantes, bufês, produtores de eventos e academias.'],['Cobertura','5.571 cidades. 74 registros no exterior excluídos. Sem CNPJs brasileiros selecionados sem município.'],['Integridade','73.366.147 linhas, dez arquivos de estabelecimentos, CRC validado e hashes preservados.'],['População','Estimativa IBGE 2026. A taxa por 10 mil habitantes é descritiva, não mede saturação.'],['Atualização','Fotografia datada, sem atualização automática do arquivo.'],['Dados CNPJ',data.source],['Layout','https://www.gov.br/receitafederal/dados/cnpj-metadados.pdf'],['Correspondência municipal','https://www.gov.br/receitafederal/dados/municipios.csv'],['População IBGE','https://sidra.ibge.gov.br/tabela/6579'],['Categoria','CNAE'],...data.taxonomy.map(c=>[c.label,c.cnaes.join(', ')])];
+s.getRange(`A1:B${rows.length}`).values=rows;s.getRange(`A1:B${rows.length}`).format={font:{name:'Arial',size:11,color:'#111516'},wrapText:true,rowHeight:44,verticalAlignment:'center'};s.getRange(`A1:A${rows.length}`).format.columnWidth=43;s.getRange(`B1:B${rows.length}`).format.columnWidth=100;s.getRange('A1').format.font={name:'Arial',size:17,bold:true,color:'#111516'};s.getRange('A17:B17').format={fill:'#111516',font:{name:'Arial',size:11,bold:true,color:'#ffffff'}};
+const image=await wb.render({sheetName:'Fontes e metodo',range:'A1:B18',scale:1,format:'png'});await fs.writeFile(path.join(root,'../qa/cnpj-planilha-fontes.png'),new Uint8Array(await image.arrayBuffer()));
+console.log((await wb.inspect({kind:'table',range:'Principal!A4:H7',include:'values,formulas',tableMaxRows:4,tableMaxCols:8,maxChars:1300})).ndjson);
+console.log((await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:20},maxChars:500})).ndjson);
+const output=path.join(root,'work/cnpj-municipios.xlsx');await fs.mkdir(path.dirname(output),{recursive:true});
+const xlsx=await SpreadsheetFile.exportXlsx(wb);await xlsx.save(output);await fs.copyFile(output,path.join(publicDir,'cnpj-municipios.xlsx'));console.log('Excel CNPJ exportado.');

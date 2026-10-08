@@ -1,0 +1,8 @@
+.age-profile{margin-top:20px;padding:20px;border:1px solid var(--boundary);border-radius:14px;background:var(--surface)}
+.age-profile h3{margin:0 0 8px}.age-profile .fine{margin:8px 0 14px}
+.age-groups{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:14px 0}
+.age-group{display:flex;flex-direction:column;gap:4px;padding:12px;border:1px solid var(--boundary);border-radius:10px}.age-group span{font-size:12px}.age-group strong{font-size:20px}.age-group small{font-size:11px;opacity:.75}
+.age-profile details{margin-top:14px}.age-profile summary{cursor:pointer;font-weight:700;margin-bottom:10px}
+.age-table{min-width:700px}.age-table th:first-child{text-align:left}.age-table td{text-align:right;white-space:nowrap}
+.age-share{position:relative;display:inline-block;min-width:82px;text-align:right}.age-share i{position:absolute;left:0;top:50%;height:6px;width:var(--age-width);background:var(--orange);opacity:.35;transform:translateY(-50%);z-index:0}.age-share{isolation:isolate}
+@media(max-width:760px){.age-groups{grid-template-columns:repeat(2,minmax(0,1fr))}.age-group:last-child{grid-column:1/-1}}

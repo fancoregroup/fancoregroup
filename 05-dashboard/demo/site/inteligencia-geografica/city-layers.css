@@ -1,0 +1,87 @@
+/* One city, five analytical layers. Missing evidence never receives a score. */
+#city-sheet{box-shadow:none}
+#city-sheet .cl-compare-short{display:none}
+#city-sheet .cp-cards .cp-metric-card{box-shadow:none}
+#city-sheet .cl-layer-summary{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:0 0 20px}
+#city-sheet .cl-layer-tile{display:flex;flex-direction:column;gap:13px;text-align:left;padding:15px 13px;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:12px;cursor:pointer;min-width:0}
+#city-sheet .cl-layer-tile:hover{border-color:var(--orange)}
+#city-sheet .cl-layer-label{font-size:11px;font-weight:500;display:flex;justify-content:space-between;gap:5px}
+#city-sheet .cl-layer-label>span{color:var(--muted)}
+#city-sheet .cl-layer-tile>strong{font:600 17px/1.25 Urbanist,sans-serif;letter-spacing:-.2px;overflow-wrap:anywhere}
+#city-sheet .cl-layer-tile>strong small{font:400 10px Inter,sans-serif;color:var(--muted)}
+#city-sheet .cl-layer-detail{font-size:10px;line-height:1.5;color:var(--muted);margin-top:auto}
+#city-sheet .cl-overview-map{margin:0 0 22px}
+#city-sheet .cl-overview-map #cp-map{height:300px;min-height:260px;flex:auto}
+#city-sheet .cl-overview-map .cp-section-heading{margin-bottom:12px}
+#city-sheet .cl-overview-map .cp-region-role{font-size:11px;line-height:1.6;color:var(--muted);margin:0 0 12px}
+#city-sheet .cl-assessment-state{display:flex;flex-wrap:wrap;align-items:center;gap:20px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 22px}
+#city-sheet .cl-assessment-state>div:first-child{flex:1;min-width:180px}
+#city-sheet .cl-assessment-state h3{font:600 24px/1.25 Urbanist,sans-serif;margin:8px 0}
+#city-sheet .cl-assessment-state p{font-size:12px;line-height:1.7;color:var(--muted);max-width:680px;margin:0}
+#city-sheet .cl-status{display:inline-block;border:1px solid var(--line);border-radius:5px;padding:4px 7px;font-size:10px;line-height:1.4;color:var(--muted)}
+#city-sheet .cl-score{display:flex;flex-direction:column;gap:7px;min-width:140px}
+#city-sheet .cl-score>strong{font:600 42px/1 Urbanist,sans-serif;letter-spacing:-1px;color:var(--text)}
+#city-sheet .cl-score small{font:400 12px Inter,sans-serif;letter-spacing:0;color:var(--muted)}
+#city-sheet .cl-score>span{font-size:10px;color:var(--muted)}
+#city-sheet .cl-score-references{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;width:100%;padding-top:16px;border-top:1px solid var(--line)}
+#city-sheet .cl-score-references>div{display:grid;grid-template-columns:1fr auto;gap:7px;font-size:11px;color:var(--muted)}
+#city-sheet .cl-score-references b{font-size:15px;color:var(--text);font-weight:500}
+#city-sheet .cl-score-references small{grid-column:1/-1;font-size:10px}
+#city-sheet .cl-structural,#city-sheet .cl-components{border-top:1px solid var(--line);padding:16px 0;margin:14px 0;font-size:12px}
+#city-sheet .cl-structural>summary,#city-sheet .cl-components>summary{cursor:pointer;font-size:12px;line-height:1.5}
+#city-sheet .cl-structural>summary b{font-size:11px;font-weight:500;color:var(--muted);margin-left:12px}
+#city-sheet .cl-structural p,#city-sheet .cl-components p{line-height:1.7;color:var(--muted);font-size:12px}
+#city-sheet .cl-component-list{display:grid;gap:12px;margin:18px 0}
+#city-sheet .cl-component-list>div{display:grid;grid-template-columns:minmax(160px,1fr) auto auto auto;gap:14px;padding-bottom:12px;border-bottom:1px solid var(--line);font-size:11px;align-items:center}
+#city-sheet .cl-component-list strong,#city-sheet .cl-component-list b{font-weight:500}
+#city-sheet .cl-component-list span{color:var(--muted)}
+#city-sheet .cl-component-list p{grid-column:1/-1;margin:0}
+#city-sheet .cl-gap-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}
+#city-sheet .cl-gap-grid>article{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:18px;min-width:0}
+#city-sheet .cl-gap-grid h4{font:600 17px/1.3 Urbanist,sans-serif;margin:0 0 10px}
+#city-sheet .cl-gap-grid p{font-size:11px;line-height:1.7;color:var(--muted);margin:0}
+#city-sheet .cl-note{font-size:12px;line-height:1.7;color:var(--muted);padding-left:14px;border-left:2px solid var(--line);margin:20px 0}
+#city-sheet .cl-regional>summary{display:flex;justify-content:space-between;gap:12px;align-items:center}
+#city-sheet .cl-regional>summary>small{font-size:10px;color:var(--muted);font-weight:400}
+#city-sheet .cl-regional[open]>.cl-region-content{margin-top:24px}
+#city-sheet .cl-legacy{border-style:dashed}
+#city-sheet .cl-legacy .cp-score-overview{margin-top:18px}
+#city-sheet .cl-evidence-label{display:inline-block;color:var(--muted);font-size:10px;border:1px solid var(--line);border-radius:5px;padding:4px 7px;margin-bottom:10px}
+#city-sheet .cl-sticky-identity{display:none;font-size:12px;line-height:1.4;font-weight:500;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:160px;padding-right:12px}
+#city-sheet.cp-header-away .cl-sticky-identity{display:block}
+#city-sheet .cp-performance{min-height:0}
+#city-sheet .cl-section-empty{padding:18px 0;color:var(--muted);font-size:12px;line-height:1.7}
+@media(max-width:900px){
+ #city-sheet .cl-layer-summary{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #city-sheet .cl-layer-tile{padding:14px}
+ #city-sheet .cl-gap-grid{grid-template-columns:1fr}
+ #city-sheet .cl-gap-grid>article{padding:16px}
+ #city-sheet.cp-header-away .cp-navigation{flex-wrap:wrap}
+ #city-sheet.cp-header-away .cl-sticky-identity{order:-2;max-width:calc(100% - 48px);flex-basis:100%;flex-grow:1;padding:10px 0 0}
+ #city-sheet.cp-header-away .cp-sticky-close{order:-1;margin:5px 0 0 auto}
+ #city-sheet.cp-header-away .cp-tabs{flex-basis:100%}
+}
+@media(max-width:600px){
+ #city-sheet .cl-layer-summary{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ #city-sheet .cl-layer-tile:last-child{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:7px 12px}
+ #city-sheet .cl-layer-tile:last-child .cl-layer-label{grid-row:1/3;align-items:center}
+ #city-sheet .cl-layer-tile:last-child .cl-layer-detail{font-size:9px}
+ #city-sheet .cl-layer-tile>strong{font-size:17px}
+ #city-sheet .cl-overview-map{padding:16px}
+ #city-sheet .cl-overview-map #cp-map{height:260px;min-height:230px}
+ #city-sheet .cl-assessment-state{padding:18px;gap:16px}
+ #city-sheet .cl-assessment-state>div:first-child{min-width:100%}
+ #city-sheet .cl-assessment-state h3{font-size:23px}
+ #city-sheet .cl-score{min-width:0}
+ #city-sheet .cl-score-references{gap:16px}
+ #city-sheet .cl-score-references>div{grid-template-columns:1fr}
+ #city-sheet .cl-component-list>div{grid-template-columns:1fr auto;gap:10px}
+ #city-sheet .cl-component-list strong{grid-column:1/-1}
+ #city-sheet .cl-component-list b{grid-column:1/-1}
+ #city-sheet .cl-regional>summary{align-items:flex-start;flex-direction:column;gap:5px}
+ #city-sheet .cp-navigation .cp-tabs .button{font-size:11px;padding:15px 10px;min-height:46px}
+ #city-sheet .cl-legacy{padding:14px}
+ #city-sheet .cp-card-label>small{white-space:normal}
+}
+
+@media(max-width:800px){#city-sheet .cp-header-actions #cp-compare{min-width:77px;width:100%;flex-wrap:nowrap}#city-sheet .cl-compare-full{display:none}#city-sheet .cl-compare-short{display:inline;white-space:nowrap}}

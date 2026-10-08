@@ -1,0 +1,21 @@
+/* Controle compartilhado pelo cabeçalho operacional e pela TV. */
+.theme-toggle {
+  width: auto;
+  padding: 0 12px;
+  gap: 8px;
+  font: 400 12px var(--fc-fonte-corpo);
+  white-space: nowrap;
+}
+.theme-toggle:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+@media (max-width: 809px) {
+  .theme-toggle { width: 40px; padding: 0; }
+  .theme-toggle span { display: none; }
+}
+@media (max-width: 500px) {
+  .topbar .breadcrumb { display: none; }
+  .tv-header .tv-clock { display: none; }
+  .tv-header .theme-toggle { margin-left: auto; }
+}
+@media (max-width: 359px) {
+  .top-actions .demo-badge { display: none; }
+}

@@ -1,0 +1,250 @@
+{
+  "coverage": {
+    "rows": 73366147,
+    "activeRows": 28263121,
+    "uniqueSelected": 229646,
+    "mapped": 229642,
+    "unmapped": 4,
+    "foreign": 4,
+    "coveredCities": 5571,
+    "totalCities": 5571,
+    "missingCities": []
+  },
+  "totals": {
+    "totalPrimary": 152287,
+    "totalAny": 229642,
+    "pilatesPrimary": 13536,
+    "pilatesAny": 14260,
+    "primary": [
+      83515,
+      68772
+    ],
+    "any": [
+      132684,
+      128477
+    ]
+  },
+  "companyFiles": [
+    {
+      "file": "Empresas0.zip",
+      "rows": 29631852,
+      "matchedNames": 8004,
+      "sha256": "07c81e64b8a19ce2bbb4c6ee70318a902e741c1c404f4c25dd3f129a89c3ede9",
+      "crcValidated": true,
+      "nulAnomalies": []
+    },
+    {
+      "file": "Empresas1.zip",
+      "rows": 4494860,
+      "matchedNames": 37,
+      "sha256": "96654b30a70af095291a7c028f813c680e8ac04d7b80c49a19671f07fad46d75",
+      "crcValidated": true,
+      "nulAnomalies": []
+    },
+    {
+      "file": "Empresas2.zip",
+      "rows": 4494860,
+      "matchedNames": 263,
+      "sha256": "0b8d79747de0f83cebf2c13abacdd9334cc4781b2f7622e7ef649b65762fdfce",
+      "crcValidated": true,
+      "nulAnomalies": []
+    },
+    {
+      "file": "Empresas3.zip",
+      "rows": 4494860,
+      "matchedNames": 553,
+      "sha256": "a3988fba9f1fd8d8177fc75097eca384666de465831e6c49185406253e880398",
+      "crcValidated": true,
+      "nulAnomalies": []
+    },
+    {
+      "file": "Empresas4.zip",
+      "rows": 4494860,
+      "matchedNames": 611,
+      "sha256": "498c690d52e5d071784269f5a6fa8aafbe8f8b810ca80c85ea2cb49dbe3af5ce",
+      "crcValidated": true,
+      "nulAnomalies": []
+    },
+    {
+      "file": "Empresas5.zip",
+      "rows": 4494860,
+      "matchedNames": 740,
+      "sha256": "d0d6bb62a16de168dfdbe11337dff566f924bf046653ae0827d9e66a4ca2e02b",
+      "crcValidated": true,
+      "nulAnomalies": []
+    },
+    {
+      "file": "Empresas6.zip",
+      "rows": 4494860,
+      "matchedNames": 575,
+      "sha256": "62de596b67a6407bd1a10cb4fdb897ad12909273327be2135eaae94a8f82e8e5",
+      "crcValidated": true,
+      "nulAnomalies": []
+    },
+    {
+      "file": "Empresas7.zip",
+      "rows": 4494860,
+      "matchedNames": 658,
+      "sha256": "c4b093f30168bea25536fc1f5b96a22ff39ae82fe157d269d9e13744f7ede377",
+      "crcValidated": true,
+      "nulAnomalies": []
+    },
+    {
+      "file": "Empresas8.zip",
+      "rows": 4494860,
+      "matchedNames": 725,
+      "sha256": "64042f388d58714e6489260cb8b7f7e31fe878fd63bdcd0798c42f0ad27ca25c",
+      "crcValidated": true,
+      "nulAnomalies": []
+    },
+    {
+      "file": "Empresas9.zip",
+      "rows": 4494860,
+      "matchedNames": 588,
+      "sha256": "dd8d13011f95acc5fb2c1ee0d51ad6969310164371380d40575c3fabbae45f78",
+      "crcValidated": true,
+      "nulAnomalies": []
+    }
+  ],
+  "establishmentFiles": [
+    {
+      "file": "Estabelecimentos0.zip",
+      "rows": 30585232,
+      "active": 12243817,
+      "eligible": 98799,
+      "duplicates": 0,
+      "named": 6290,
+      "sha256": "7a9cbce08740f54768dcde6c89a2041db828ff7ac7463c952db419891abadf98",
+      "crcValidated": true,
+      "nulAnomalies": [
+        {
+          "physicalLine": 23344617,
+          "nulBytes": 4
+        }
+      ],
+      "seconds": 81.4
+    },
+    {
+      "file": "Estabelecimentos1.zip",
+      "rows": 4753435,
+      "active": 1167397,
+      "eligible": 9095,
+      "duplicates": 0,
+      "named": 437,
+      "sha256": "8954bb9b76d399d9921ad99009bf0ce2434e19d2c04c180ca1ba4c78308c6165",
+      "crcValidated": true,
+      "nulAnomalies": [],
+      "seconds": 13.3
+    },
+    {
+      "file": "Estabelecimentos2.zip",
+      "rows": 4753435,
+      "active": 2027520,
+      "eligible": 16209,
+      "duplicates": 0,
+      "named": 995,
+      "sha256": "a30c3090c3b93ace16b0080d7e14dfc37e41c8a81d1d4a12194c5712cbf6d8ed",
+      "crcValidated": true,
+      "nulAnomalies": [
+        {
+          "physicalLine": 4636030,
+          "nulBytes": 1
+        }
+      ],
+      "seconds": 13.1
+    },
+    {
+      "file": "Estabelecimentos3.zip",
+      "rows": 4753435,
+      "active": 2088198,
+      "eligible": 18110,
+      "duplicates": 0,
+      "named": 1170,
+      "sha256": "d457960b349b542ac235505a4df32c59fd14c822ef1ef4fa0f6e3b0e4e3dc37e",
+      "crcValidated": true,
+      "nulAnomalies": [],
+      "seconds": 14.5
+    },
+    {
+      "file": "Estabelecimentos4.zip",
+      "rows": 4753435,
+      "active": 1396640,
+      "eligible": 10697,
+      "duplicates": 0,
+      "named": 622,
+      "sha256": "c144b469c93ed53d905d9a7ea563051e1171d33cfea22ccae7ef18c2ffb0c6c0",
+      "crcValidated": true,
+      "nulAnomalies": [],
+      "seconds": 13.3
+    },
+    {
+      "file": "Estabelecimentos5.zip",
+      "rows": 4753435,
+      "active": 2068187,
+      "eligible": 16691,
+      "duplicates": 0,
+      "named": 1044,
+      "sha256": "77a50fe829945f788a18e89390c1577c6cded6f0983007cb9314e9a9ffa20581",
+      "crcValidated": true,
+      "nulAnomalies": [],
+      "seconds": 14.6
+    },
+    {
+      "file": "Estabelecimentos6.zip",
+      "rows": 4753435,
+      "active": 1874435,
+      "eligible": 16240,
+      "duplicates": 0,
+      "named": 999,
+      "sha256": "89ec562727018972033ffd14cbfcc23221e8aa3125af846ea1bf86bfb109c6fa",
+      "crcValidated": true,
+      "nulAnomalies": [],
+      "seconds": 15.2
+    },
+    {
+      "file": "Estabelecimentos7.zip",
+      "rows": 4753435,
+      "active": 1556470,
+      "eligible": 12293,
+      "duplicates": 0,
+      "named": 746,
+      "sha256": "07868cda860215dca2368afce06d117b27a6756a8b33ffd0ed562432dfef5f62",
+      "crcValidated": true,
+      "nulAnomalies": [],
+      "seconds": 13.7
+    },
+    {
+      "file": "Estabelecimentos8.zip",
+      "rows": 4753435,
+      "active": 2135370,
+      "eligible": 17126,
+      "duplicates": 0,
+      "named": 1123,
+      "sha256": "bebf369fbe37437fd61f804ec7e24f541f831fb0fcb3e0564de867377c2da52d",
+      "crcValidated": true,
+      "nulAnomalies": [],
+      "seconds": 14.9
+    },
+    {
+      "file": "Estabelecimentos9.zip",
+      "rows": 4753435,
+      "active": 1705087,
+      "eligible": 14386,
+      "duplicates": 0,
+      "named": 834,
+      "sha256": "45bf199ac5b4adc3b1b99293024902406f13f93ba08389df3c7c27475323212f",
+      "crcValidated": true,
+      "nulAnomalies": [],
+      "seconds": 14.9
+    }
+  ],
+  "excluded": [
+    {
+      "uf": "EX",
+      "municipio": "9707",
+      "count": 4
+    }
+  ],
+  "nameRule": "Palavra inteira PILATES, sem acentos e sem distinção de caixa, em nome fantasia ou razão social. Exige CNAE 9313100 ou 8650004 ativo. Não confirma oferta ou funcionamento.",
+  "crosswalkSha256": "f722a30ae12930a0febfd9e7e1664684a64c231c0cbe36b40b7a87a65379d73d"
+}

@@ -1,0 +1,143 @@
+/* Tema escuro Fancore. Cores compartilhadas pelo operacional e pelo modo TV. */
+:root {
+  color-scheme: dark;
+  --ink: var(--fc-creme);
+  --ink-soft: var(--fc-cinza-claro);
+  --line: rgba(244, 241, 238, .15);
+  --soft: rgba(244, 241, 238, .06);
+  --panel: var(--fc-grafite);
+}
+
+body, #tv-screen { background: var(--fc-preto); color: var(--ink); }
+::selection { background: var(--fc-laranja); color: var(--fc-preto); }
+.topbar, .sidebar { background: var(--fc-preto); }
+.breadcrumb, .breadcrumb span, .demo-badge { color: var(--ink-soft); }
+.breadcrumb strong { color: var(--ink); }
+.demo-badge i, .tag-dot { background: var(--fc-laranja); }
+.eyebrow { color: var(--fc-laranja); }
+.nav-link.active, .top-actions .fc-botao {
+  background: var(--fc-laranja);
+  color: var(--fc-preto);
+  border-color: var(--fc-laranja);
+}
+.top-actions .fc-botao:hover { background: var(--fc-creme); border-color: var(--fc-creme); }
+.filterbar select, select, .search { background: var(--fc-preto); color: var(--ink); }
+option, .tv-controls option { background: var(--fc-grafite); color: var(--ink); }
+.text-button:hover { color: var(--fc-laranja); }
+button:focus-visible, a:focus-visible, select:focus-visible,
+input:focus-visible, tr:focus-visible { outline-color: var(--fc-laranja); }
+
+/* Superfícies e estados selecionados. */
+.panel, .kpi, .partner, .growth-card, .organic-card, .trend-column {
+  background: var(--panel);
+  border-color: var(--line);
+  border-top-color: var(--fc-laranja);
+}
+.panel.light, .partner:first-child, .radar-card:nth-child(2),
+.race-card, .race-card.race-leader, .channel-budget, .channel-budget:nth-child(2),
+.macro-strip { background: var(--panel); color: var(--ink); }
+.panel.light .muted, .panel.light .panel-heading p, .panel.light .chart-note,
+.goal-big span, .macro-item span, .macro-item small { color: var(--ink-soft); }
+.goal-note { border-color: var(--line); }
+.growth-card:hover, .race-card:hover { background: var(--soft); }
+.tag { background: var(--soft); color: var(--ink-soft); }
+.brand-monogram, .partner .avatar { background: var(--fc-preto); color: var(--fc-laranja); }
+.tab.active { background: var(--fc-laranja); color: var(--fc-preto); border-color: var(--fc-laranja); }
+.rev-brand-tabs>button.active, .rev-alert-tabs button.active {
+  background: var(--panel);
+  color: var(--ink);
+  border-color: var(--line);
+  border-top-color: var(--fc-laranja);
+}
+.rev-brand-tabs .active .brand-monogram { background: var(--fc-laranja); color: var(--fc-preto); }
+.rev-alert-tabs button.active strong { color: var(--fc-laranja); }
+.rev-tabs button.active { color: var(--fc-laranja); border-color: var(--fc-laranja); }
+.rev-reading>span:before { background: var(--fc-laranja); }
+.rev-revenue {
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-top-color: var(--fc-laranja);
+}
+.rev-amount, .rev-tv-money>strong { color: var(--fc-laranja); }
+.rev-priority, .rev-tv-priority {
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-top-color: var(--fc-laranja);
+}
+.rev-priority small, .rev-priority p { color: var(--ink-soft); }
+.rev-priority .text-button, .rev-priority .text-button:hover { color: var(--fc-laranja); }
+.rev-route.active { background: var(--panel); border-color: var(--line); border-top-color: var(--fc-laranja); }
+.rev-route.active h3 { color: var(--fc-laranja); }
+.rev-funnel-lane.last { background: var(--soft); }
+.rev-funnel-lane.last .rev-lane-name>strong { color: var(--fc-laranja); }
+.rev-table tfoot { border-color: var(--line); }
+
+/* Gráficos: laranja para volume, tons neutros para comparação e trilhos. */
+.rev-mini-journey i {
+  background: linear-gradient(to right, var(--fc-laranja) var(--volume), var(--soft) var(--volume));
+}
+.rev-progress i, .rev-lane-bar i, .rev-cohort-chart i, .rev-pipeline i,
+.volume-track i, .funnel-row .bar i, .progress>i, .race-track i,
+.conversion-bar i, .partner-meter i, .legend i { background: var(--fc-laranja); }
+.funnel-row .bar, .progress, .panel.light .progress, .race-track,
+.conversion-bar, .partner-meter, .channel-budget:nth-child(2) .budget-track {
+  background: var(--soft);
+}
+.legend .neutral { background: var(--fc-cinza-medio); border-color: var(--fc-cinza-medio); }
+.line-chart .main-line { stroke: var(--fc-laranja); }
+.line-chart .second-line { stroke: var(--fc-cinza-medio); }
+.line-chart circle { fill: var(--fc-laranja); }
+.line-chart path[fill^="url"] { fill: rgba(237, 108, 5, .08); }
+.delta.up::before, .attention-item .icon { color: var(--fc-laranja); }
+.delta.down::before { color: var(--fc-cinza-claro); }
+.tone-0 { background: var(--fc-laranja); }
+.tone-1 { background: var(--fc-creme); }
+.tone-2 { background: var(--fc-cinza-medio); }
+.tone-3 { background: var(--fc-cinza-texto); }
+.orbit-guide { stroke: var(--fc-creme); }
+.orbit-volume { fill: var(--fc-laranja); }
+.orbit-mark { stroke: var(--fc-preto); }
+.sparkline { color: var(--fc-laranja); }
+.conversion-win .conversion-count { background: var(--fc-laranja); color: var(--fc-preto); }
+.coverage-ring { background: conic-gradient(var(--fc-laranja) var(--coverage), var(--soft) 0); }
+.coverage-ring>div { background: var(--fc-preto); }
+.unit-dot, .coverage-legend i { border-color: var(--fc-cinza-medio); }
+.unit-dot.connected, .coverage-legend>span:first-child i { background: var(--fc-laranja); border-color: var(--fc-laranja); }
+
+/* Conteúdo orgânico, rede franqueada e tendências. */
+.featured-line { background: var(--fc-preto); color: var(--ink); }
+.featured-symbol { color: var(--fc-laranja); }
+.post-card, .local-post { background: var(--panel); color: var(--ink); border: 1px solid var(--line); }
+.post-card:hover, .local-post:hover { border-color: var(--fc-cinza-medio); }
+.post-art, .post-art.dark-art, .local-art { background: var(--fc-preto); color: var(--ink); }
+.post-art:not(.dark-art) { background: var(--fc-laranja); color: var(--fc-preto); }
+.post-art:not(.dark-art) .post-marker { border-color: var(--fc-preto); }
+.local-rank, .local-glyph { color: var(--fc-laranja); }
+.local-rank-1 .local-art { background: var(--fc-laranja); color: var(--fc-preto); }
+.local-rank-1 .local-art>small, .local-rank-1 .local-rank,
+.local-rank-1 .local-glyph { color: var(--fc-preto); }
+.region-mark { border-color: var(--fc-laranja); color: var(--fc-laranja); }
+.trend-rank { color: var(--fc-laranja); }
+
+/* Placar exclusivo da TV. */
+.score-number { color: var(--fc-laranja); }
+.score-live, .score-track i, .score-brand i { background: var(--fc-laranja); }
+.score-year { border-color: var(--line); }
+.score-recent>span { background: var(--fc-laranja); color: var(--fc-preto); }
+.matrix-on { fill: var(--fc-laranja); }
+.matrix-off { fill: var(--fc-creme); opacity: .13; }
+.score-track, .score-brand>div { background: var(--soft); }
+.tv-header img, .tv-controls { background: var(--fc-preto); }
+.tv-section-label>span { border-color: var(--fc-laranja); color: var(--fc-laranja); }
+.tv-controls .text-button:hover { color: var(--fc-laranja); }
+.tv-timer { background: var(--fc-grafite); }
+#tv-progress { background: var(--fc-laranja); }
+
+/* Detalhes, formulários e avisos também seguem o tema. */
+dialog { background: var(--fc-grafite); color: var(--ink); border-color: var(--line); }
+.dialog-sub, .dialog-copy { color: var(--ink-soft); }
+.dialog-copy h3 { color: var(--ink); }
+.timeline-item:before { background: var(--fc-laranja); }
+.toast { background: var(--fc-grafite); color: var(--ink); border: 1px solid var(--line); }

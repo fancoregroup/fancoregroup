@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#111516">
+  <title>Agrobar · Mapa da rede</title>
+  <base href="/mapa-agrobar/">
+  <meta name="description" content="Mapa interativo da rede Agrobar, por cidade e status.">
+  <link rel="icon" href="../assets/simbolo-fancore.png">
+  <link rel="stylesheet" href="../assets/urbanist.css"><link rel="stylesheet" href="../assets/inter.css">
+  <link rel="stylesheet" href="assets/leaflet.css"><link rel="stylesheet" href="mapa.css">
+  <link rel="stylesheet" href="dark.css" id="dark-theme">
+  <script src="../theme.js"></script><script src="assets/leaflet.js" defer></script><script src="mapa.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o mapa</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Voltar ao dashboard Fancore"><img src="../assets/logo-fancore.png" alt="Fancore"></a>
+    <span class="divider"></span><span class="crumb">Inteligência da rede <span>/</span> <strong>Agrobar</strong></span>
+    <div class="top-actions"><a class="button" href="/inteligencia-geografica/">Inteligência geográfica ↗</a><button class="button theme-button" data-theme-toggle type="button">Tema</button><button class="button" id="logout" hidden type="button">Sair</button></div>
+  </header>
+  <section class="access" id="access" aria-labelledby="access-title">
+    <div class="access-art" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 55S12 36 12 24a20 20 0 0 1 40 0C52 36 32 55 32 55Z"/><circle cx="32" cy="24" r="7"/></svg></div>
+    <span class="eyebrow">Fancore · Inteligência da rede</span><h1 id="access-title">Agrobar pelo Brasil.</h1>
+    <p>O retrato da rede, cidade por cidade.<br>Entre com o código compartilhado com o time.</p>
+    <form id="login-form"><label for="password">Código de acesso</label><div class="access-input"><input id="password" type="password" autocomplete="current-password" required maxlength="200"><button class="button" id="show-password" type="button" aria-label="Mostrar código">Mostrar</button></div><button class="button primary" id="login" type="submit">Abrir mapa <span aria-hidden="true">↗</span></button><p id="auth-message" class="error" role="status" aria-live="polite"></p></form>
+  </section>
+  <main id="main" hidden>
+    <section class="page-heading"><div><div class="eyebrow">Expansão e operação</div><h1>Agrobar pelo Brasil<span>.</span></h1><p id="summary"></p></div><div class="heading-actions"><button class="button" id="export" type="button">Exportar cidades <span aria-hidden="true">↓</span></button><button class="button primary" id="fullscreen" type="button">Apresentar <span aria-hidden="true">↗</span></button></div></section>
+    <section class="status-grid" id="status-grid" aria-label="Filtrar por status"></section>
+    <section class="map-workspace" id="map-workspace">
+      <aside class="city-panel" aria-label="Cidades da rede">
+        <div class="panel-head"><h2>Cidades</h2><button class="text-button" id="reset-filters" type="button">Limpar filtros</button></div>
+        <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Buscar cidade ou estado" aria-label="Buscar cidade ou estado" autocomplete="off"></label>
+        <select id="state-filter" aria-label="Filtrar por estado"><option value="all">Todos os estados e Paraguai</option></select>
+        <div class="result-line"><span id="result-count" aria-live="polite"></span><span>Cidade / UF</span></div>
+        <div class="city-list" id="city-list" role="list"></div>
+        <div class="panel-foot"><span class="tiny-dot"></span> Status informados pela Fancore</div>
+      </aside>
+      <div class="map-area">
+        <div id="map" role="region" aria-label="Mapa interativo da rede Agrobar. Use os botões de zoom ou a lista de cidades."></div>
+        <div class="map-toolbar"><button class="button" id="fit" type="button" title="Enquadrar as cidades filtradas">Ver cidades</button><button class="button" id="brazil" type="button">Brasil inteiro</button></div>
+        <div class="map-caption"><strong id="map-caption">Presença da rede</strong><span>Arraste para explorar · Use + e − para aproximar</span></div>
+        <button class="button exit-fullscreen" id="exit-fullscreen" type="button" hidden>Fechar apresentação</button>
+        <div class="map-error" id="map-error" hidden>Não foi possível carregar o desenho do mapa. A lista de cidades continua disponível. <button class="button" onclick="location.reload()">Tentar novamente</button></div>
+      </div>
+    </section>
+    <footer><p><strong>Fonte:</strong> planilha enviada em 21/09/2026. Pins representam cidades, não endereços das unidades. <button class="text-button" id="source-details" type="button">Sobre a base</button></p><span>Fancore · Mapa da rede</span></footer>
+  </main>
+  <dialog id="source-dialog"><button class="dialog-close button" id="close-source" aria-label="Fechar informações" type="button">×</button><span class="eyebrow">Origem dos dados</span><h2>Uma cidade, um pin.</h2><p id="source-summary"></p><p>Os status seguem as cores da planilha enviada por Lucas em 21/09/2026. Essa classificação prevalece sobre o levantamento público anterior.</p><p>“Liberada” é uma observação da planilha, preservada no detalhe das cidades. Ela não altera o status indicado pela cor.</p><p>Localização aproximada do município. Não representa a posição exata do bar.</p><div class="source-links"><a href="https://servicodados.ibge.gov.br/api/docs/malhas?versao=3" target="_blank" rel="noopener">Malhas: IBGE ↗</a><a href="https://github.com/kelvins/municipios-brasileiros" target="_blank" rel="noopener">Coordenadas: Municípios Brasileiros ↗</a><a href="https://www.geonames.org/search.html?country=PY" target="_blank" rel="noopener">Cidade do Leste: GeoNames ↗</a></div></dialog>
+<div role="status" style="position:fixed;bottom:0;left:0;right:0;z-index:100000;background:#ffdc80;color:#171717;padding:7px 12px;text-align:center;font:12px system-ui">DEMONSTRAÇÃO: campanhas, CRM e unidades fictícios. Indicadores municipais mantêm suas fontes públicas.</div>
+</body>
+</html>
