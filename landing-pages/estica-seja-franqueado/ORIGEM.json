@@ -1,0 +1,22 @@
+{
+  "site": "https://estica-seja-franqueado.fancore-9419.chatgpt.site",
+  "project_id": "appgprj_6ac40be41e10819183e92cf9ba2dc31c",
+  "version_number": 1,
+  "source_commit": "a08ffa73163b95a48a40258efec27f49917d112b",
+  "exported_at": "2026-10-08",
+  "timezone": "America/Sao_Paulo",
+  "files": {
+    "dist/assets/all-round-bold.woff2": "b2b43b61acccca0b9a971fe19992a299efc97d3b1acc2bdb163caa3db42465f3",
+    "dist/assets/beneficio-flexibilidade.jpg": "0eb84851d96a9aa1cb0a3b370a0341865e341df1a269bf42778bfdd076ce4cd5",
+    "dist/assets/beneficio-individual.jpg": "d58b6868f49958930ceee7cece4c81834ebe4810283e38f8c228a25440aef6a3",
+    "dist/assets/beneficio-mobilidade.jpg": "8191561b02f80163a53ea8298dbae3a5f6c3ea5aa9cd846f408c810b47929aa4",
+    "dist/assets/estica-ambiente.jpg": "d9cc87a0913b5b11b497bad0dc90a6ae4f7bc5e86f4c6cfab502f2d630c001ea",
+    "dist/assets/estica-detalhe.jpg": "da71f940210aa833506419d5ad124082e70eddd0249cb2306bd3ed55f4582f3b",
+    "dist/assets/favicon.svg": "4b089441b3dbe946bffc7dbaa2c3ab2f218f3f73e1aee577150822b2247f7f98",
+    "dist/assets/inter.woff2": "362b168da82d69bc67d2a358fa20c59151cb4ceac8a5506be6baef5e6827fa42",
+    "dist/assets/logo-estica.png": "6d73a00785174738f4907baefaa2cc69a3b82a708fb1d17a101764131f3639fd",
+    "dist/index.html": "e0633d411464504bb2a17db1ce230e137c72f4b80a7d0cbcc534fdcfdb576d41",
+    "dist/script.js": "ae3ea6ccea3c5f2a39a850e7043fdd40c6d77b74d843db80e89bccbdcb39199a",
+    "dist/styles.css": "4139b422041a127615835b8c3c8d892d5e1ed8315c3f98e1b6a6c936d6123754"
+  }
+}

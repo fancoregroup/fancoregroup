@@ -1,0 +1,61 @@
+{
+  "reference": "https://estica.space",
+  "captured_brt": "2026-10-05",
+  "assets": [
+    {
+      "file": "all-round-bold.woff2",
+      "bytes": 27284,
+      "sha256": "b2b43b61acccca0b9a971fe19992a299efc97d3b1acc2bdb163caa3db42465f3",
+      "source": "https://estica.space/assets/all-round-bold.woff2"
+    },
+    {
+      "file": "beneficio-flexibilidade.jpg",
+      "bytes": 169875,
+      "sha256": "0eb84851d96a9aa1cb0a3b370a0341865e341df1a269bf42778bfdd076ce4cd5",
+      "source": "https://estica.space/assets/beneficio-flexibilidade.jpg"
+    },
+    {
+      "file": "beneficio-individual.jpg",
+      "bytes": 154237,
+      "sha256": "d58b6868f49958930ceee7cece4c81834ebe4810283e38f8c228a25440aef6a3",
+      "source": "https://estica.space/assets/beneficio-individual.jpg"
+    },
+    {
+      "file": "beneficio-mobilidade.jpg",
+      "bytes": 154594,
+      "sha256": "8191561b02f80163a53ea8298dbae3a5f6c3ea5aa9cd846f408c810b47929aa4",
+      "source": "https://estica.space/assets/beneficio-mobilidade.jpg"
+    },
+    {
+      "file": "estica-ambiente.jpg",
+      "bytes": 146614,
+      "sha256": "d9cc87a0913b5b11b497bad0dc90a6ae4f7bc5e86f4c6cfab502f2d630c001ea",
+      "source": "https://estica.space/assets/estica-ambiente.jpg"
+    },
+    {
+      "file": "estica-detalhe.jpg",
+      "bytes": 189678,
+      "sha256": "da71f940210aa833506419d5ad124082e70eddd0249cb2306bd3ed55f4582f3b",
+      "source": "https://estica.space/assets/estica-detalhe.jpg"
+    },
+    {
+      "file": "favicon.svg",
+      "bytes": 301,
+      "sha256": "4b089441b3dbe946bffc7dbaa2c3ab2f218f3f73e1aee577150822b2247f7f98",
+      "source": "https://estica.space/assets/favicon.svg"
+    },
+    {
+      "file": "inter.woff2",
+      "bytes": 27380,
+      "sha256": "362b168da82d69bc67d2a358fa20c59151cb4ceac8a5506be6baef5e6827fa42",
+      "source": "https://estica.space/assets/inter.woff2"
+    },
+    {
+      "file": "logo-estica.png",
+      "bytes": 11392,
+      "sha256": "6d73a00785174738f4907baefaa2cc69a3b82a708fb1d17a101764131f3639fd",
+      "source": "https://estica.space/assets/logo-estica.png"
+    }
+  ],
+  "structure_reference": "https://amelhorfranquia.com.br/shelf"
+}

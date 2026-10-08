@@ -45,6 +45,10 @@ O servidor local atende as APIs de performance e mapa. As interfaces de recrutam
 | Configuração de deploy | `05-dashboard/demo/site/vercel.json`, `package.json`, `package-lock.json` |
 | Verificações automáticas | `.github/workflows/dashboards.yml` |
 
+## Landing pages
+
+A [LP Estica | Seja franqueado](landing-pages/estica-seja-franqueado/README.md) também está neste repositório, com HTML, CSS, JavaScript, imagens e fontes originais. O README da pasta explica como executar, editar e hospedar. [Ver LP no Sites](https://estica-seja-franqueado.fancore-9419.chatgpt.site).
+
 ## Colaborar
 
 Crie uma branch, faça as mudanças e abra um pull request. Quem administra a conta `fancoregroup` pode conceder acesso de escrita ao GitHub pessoal do Daniel. O código pode ser clonado imediatamente por estar público.

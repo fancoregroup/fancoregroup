@@ -9,3 +9,5 @@ Este repositório é público e serve à colaboração técnica. A distribuiçã
 - Dados geográficos mantêm data, origem, licença e cobertura. Ausência de um valor não significa zero.
 - GitHub técnico: `lucasmarcato`; autoria de publicação: `lucasmarcato@me.com`. Não mudar a identidade técnica para a conta dona do repositório.
 - Data da publicação inicial: 08/10/2026, horário de Brasília.
+
+- 08/10/2026: LP Estica Seja franqueado exportada da versão 1 do Sites para `landing-pages/estica-seja-franqueado/`, com arquivos estáticos originais, procedência dos assets e instruções. Preserve o conteúdo da LP; a regra de fixtures fictícias aplica-se aos dados internos dos dashboards. Destino provisório WhatsApp, sem coleta persistente ou CRM. Sem atualização da hospedagem original.

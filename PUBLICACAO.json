@@ -298,9 +298,24 @@
     "05-dashboard/mapa-agrobar/gera_mapa.py": "aa0a6326c9fd6dd2838090c528223816b432d716d8bd33ce1a8644841d4fe7d1",
     "05-dashboard/recrutamento/migrar.mjs": "f9bd7bdbe8849a33a42383633d27c3b2274c5cd89a10a975e2383186c8bab361",
     "05-dashboard/recrutamento/schema.sql": "9e1699f212413b1ebc77d5a5981eab5373eed52af59e73aea7c9dee66ab9b1bd",
-    "AGENTS.md": "c157bc17aa0db964e2979bc31ccbba13242c0279ede2831f82b5f5c4e045c395",
-    "README.md": "24cf2ef7f3ee84846a3e3f3fad347182de9bf426603f3256790cdae5e86b7723",
+    "AGENTS.md": "97d2586d60ea2090390996d7e71f2b315542b1fd15751052c40ec36d890e027f",
+    "README.md": "44c26eb88cb2a5682f2b629633c1e42530a146a5db1026a6d16a123229cd87e2",
     "docs/INFRAESTRUTURA.md": "b0c32b351cd4c2016eb20a0823c467d00d015e2a5d88b661c21c7aa3d1660a89",
+    "landing-pages/estica-seja-franqueado/ORIGEM.json": "405f5d1feb1a5cec1e5ef5cc4138ab4b1b996fd0586499a92d43bd0041a846fa",
+    "landing-pages/estica-seja-franqueado/README.md": "423bc064ab75d56dd6b91dd8e0c138cc3f98a716cccb0d1c3a390a35dd04472a",
+    "landing-pages/estica-seja-franqueado/assets-proveniencia.json": "061e5447b75a289b5c730c4fd8d746c6c5468b8411274bc3021787006228546e",
+    "landing-pages/estica-seja-franqueado/dist/assets/all-round-bold.woff2": "b2b43b61acccca0b9a971fe19992a299efc97d3b1acc2bdb163caa3db42465f3",
+    "landing-pages/estica-seja-franqueado/dist/assets/beneficio-flexibilidade.jpg": "0eb84851d96a9aa1cb0a3b370a0341865e341df1a269bf42778bfdd076ce4cd5",
+    "landing-pages/estica-seja-franqueado/dist/assets/beneficio-individual.jpg": "d58b6868f49958930ceee7cece4c81834ebe4810283e38f8c228a25440aef6a3",
+    "landing-pages/estica-seja-franqueado/dist/assets/beneficio-mobilidade.jpg": "8191561b02f80163a53ea8298dbae3a5f6c3ea5aa9cd846f408c810b47929aa4",
+    "landing-pages/estica-seja-franqueado/dist/assets/estica-ambiente.jpg": "d9cc87a0913b5b11b497bad0dc90a6ae4f7bc5e86f4c6cfab502f2d630c001ea",
+    "landing-pages/estica-seja-franqueado/dist/assets/estica-detalhe.jpg": "da71f940210aa833506419d5ad124082e70eddd0249cb2306bd3ed55f4582f3b",
+    "landing-pages/estica-seja-franqueado/dist/assets/favicon.svg": "4b089441b3dbe946bffc7dbaa2c3ab2f218f3f73e1aee577150822b2247f7f98",
+    "landing-pages/estica-seja-franqueado/dist/assets/inter.woff2": "362b168da82d69bc67d2a358fa20c59151cb4ceac8a5506be6baef5e6827fa42",
+    "landing-pages/estica-seja-franqueado/dist/assets/logo-estica.png": "6d73a00785174738f4907baefaa2cc69a3b82a708fb1d17a101764131f3639fd",
+    "landing-pages/estica-seja-franqueado/dist/index.html": "e0633d411464504bb2a17db1ce230e137c72f4b80a7d0cbcc534fdcfdb576d41",
+    "landing-pages/estica-seja-franqueado/dist/script.js": "ae3ea6ccea3c5f2a39a850e7043fdd40c6d77b74d843db80e89bccbdcb39199a",
+    "landing-pages/estica-seja-franqueado/dist/styles.css": "4139b422041a127615835b8c3c8d892d5e1ed8315c3f98e1b6a6c936d6123754",
     "tools/campaign_reports/build.py": "ed0c33dd961415497a8f8f6e7fdef4b7d5f13ee0583ce87626c136e8d28642e0",
     "tools/campaign_reports/collect.py": "81e0e1786bb242c11c282a248bdf5c9af50b5a1d048ad3c6dc30a7299c7a26b0",
     "tools/campaign_reports/demo.cjs": "5502cce8a240504dfdacb5814eee461fbea47eacd5fb99819b0b08ce143c9941",
@@ -315,5 +330,13 @@
     "tools/campaign_reports/test_demo.cjs": "ae2cd21dcdd5e8a17498c6937c67f515d7f7d18cb2fe1f77c21e0599ef5f8dd3",
     "tools/campaign_reports/test_model.py": "cbc0990ced3bf2fd02ab6c6ea02879f5eb100ac9639aa3d0ae13dbadb2c00ecd",
     "tools/checa_marca.py": "299f5e56b2b29a059cc5789294133cdd1d3b33fb3531474a723dc8c9e41c29e2"
+  },
+  "components": {
+    "landing-pages/estica-seja-franqueado": {
+      "source": "https://estica-seja-franqueado.fancore-9419.chatgpt.site",
+      "sourceCommit": "a08ffa73163b95a48a40258efec27f49917d112b",
+      "sourceVersion": 1,
+      "exportedAt": "2026-10-08"
+    }
   }
 }
